@@ -5,7 +5,7 @@ function App() {
   const downloadResume = () => {
     // This downloads the resume from the public folder
     const link = document.createElement('a');
-    link.href = '/resume.pdf'; // File should be in the public folder
+    link.href = '/ErinFloresca_Resume.pdf'; // File should be in the public folder
     link.download = 'Erin_Floresca_Resume.pdf'; // This will be the downloaded filename
     link.click();
   };
