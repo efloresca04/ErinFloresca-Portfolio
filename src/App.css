@@ -4,9 +4,10 @@
 :root {
   --primary-color: #232323;
   --secondary-color: #666;
-  --accent-color: #7c5cff;
-  --light-bg: #f6f5f3;
-  --white: #ffffff;
+  --accent-color: #659157;
+  --hover-accent-color: #47663d;
+  --light-bg: #f0ead6;
+  --white: #f9f7f0;
   --border-light: #ececec;
   --text-light: #5a5a5a;
   --hover-transform: translateY(-2px);
@@ -23,7 +24,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
   background: var(--light-bg);
   color: var(--primary-color);
   line-height: 1.6;
@@ -35,7 +36,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -46,10 +47,12 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(15px) saturate(180%);
+  -webkit-backdrop-filter: blur(15px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   z-index: 1000;
-  border-bottom: 1px solid var(--border-light);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 }
 
 .nav-container {
@@ -62,6 +65,7 @@ body {
 }
 
 .logo {
+  font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--primary-color);
@@ -87,7 +91,7 @@ body {
 }
 
 .nav-cta {
-  background: var(--primary-color);
+  background: var(--accent-color);
   color: var(--white) !important;
   padding: 0.75rem 1.5rem;
   border-radius: 25px;
@@ -95,15 +99,15 @@ body {
 }
 
 .nav-cta:hover {
-  background: var(--accent-color);
+  background: var(--hover-accent-color);
   transform: var(--hover-transform);
 }
 
 /* About Section */
 .about-section {
-  padding: 8rem 0 6rem;
+  padding: 6rem 0 6rem;
   background: var(--white);
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 .about-content {
@@ -114,8 +118,9 @@ body {
 }
 
 .about-text h1 {
+  font-family: 'Playfair Display', serif;
   font-size: 3.5rem;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.1;
   margin-bottom: 0.5rem;
   color: var(--primary-color);
@@ -150,7 +155,7 @@ body {
 }
 
 .resume-btn:hover {
-  background: #6a4bff;
+  background: var(--hover-accent-color);
   transform: var(--hover-transform);
   box-shadow: 0 6px 20px rgba(124, 92, 255, 0.3);
 }
@@ -163,6 +168,10 @@ body {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
+.about-image {
+  margin-top: -1rem;
+}
+
 /* Projects Section */
 .projects-section {
   padding: 6rem 0;
@@ -170,6 +179,7 @@ body {
 }
 
 .projects-section h2 {
+  font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 4rem;
@@ -180,6 +190,31 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
+}
+
+.show-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.show-more-btn {
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 0.875rem 2rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 15px rgba(124, 92, 255, 0.3);
+}
+
+.show-more-btn:hover {
+  background: var(--hover-accent-color);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(124, 92, 255, 0.4);
 }
 
 .project-box {
@@ -197,7 +232,7 @@ body {
 }
 
 .project-image {
-  height: 250px;
+  height: 350px;
   overflow: hidden;
 }
 
@@ -218,7 +253,7 @@ body {
 
 .project-info h3 {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 1rem;
   color: var(--primary-color);
 }
@@ -237,7 +272,7 @@ body {
 
 .project-tech span {
   background: var(--light-bg);
-  color: var(--accent-color);
+  color: var(----primary-color);
   padding: 0.2rem 0.5rem;
   border-radius: 12px;
   font-size: 0.75rem;
@@ -251,10 +286,11 @@ body {
 }
 
 .experience-section h2 {
+  font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 4rem;
-  text-align: center;
+  text-align: left;
 }
 
 .experience-list {
@@ -337,10 +373,11 @@ body {
 }
 
 .education-section h2 {
+  font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 4rem;
-  text-align: center;
+  text-align: left;
 }
 
 .education-content {
@@ -397,10 +434,11 @@ body {
 }
 
 .skills-section h2 {
+  font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 4rem;
-  text-align: center;
+  text-align: left;
 }
 
 .skills-grid {
@@ -448,6 +486,7 @@ body {
 }
 
 .contact-section h2 {
+  font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
@@ -492,7 +531,7 @@ body {
 }
 
 .contact-btn:not(.secondary):hover {
-  background: #6a4bff;
+  background: var(--hover-accent-color);
 }
 
 .contact-btn.secondary:hover {
@@ -501,6 +540,63 @@ body {
 }
 
 /* Responsive Design */
+/* Large desktop styles */
+@media (min-width: 1920px) {
+  .container {
+    max-width: 85%;
+    padding: 0 3rem;
+    margin: 0 auto;
+  }
+  
+  .about-content {
+    gap: 6rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1919px) {
+  .container {
+    max-width: 90%;
+    padding: 0 2.5rem;
+    margin: 0 auto;
+  }
+  
+  .about-content {
+    gap: 5rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+    padding: 0 1.5rem;
+  }
+  
+  .about-text h1 {
+    font-size: 3rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile styles */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -513,6 +609,10 @@ body {
   
   .about-text h1 {
     font-size: 2.5rem;
+  }
+  
+  .about-text h2 {
+    font-size: 1.25rem;
   }
   
   .container {
@@ -547,5 +647,37 @@ body {
   
   section {
     padding: 4rem 0 !important;
+  }
+  
+  .about-section {
+    margin-top: 80px;
+  }
+}
+
+/* Small mobile styles */
+@media (max-width: 480px) {
+  .about-text h1 {
+    font-size: 2rem;
+  }
+  
+  .about-text h2 {
+    font-size: 1.125rem;
+  }
+  
+  .container {
+    padding: 0 0.75rem;
+  }
+  
+  .project-info h3 {
+    font-size: 1.125rem;
+  }
+  
+  .about-image img {
+    height: 350px;
+  }
+  
+  .resume-btn {
+    width: 100%;
+    text-align: center;
   }
 }

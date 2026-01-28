@@ -29,7 +29,7 @@ export const projects: Project[] = [
     id: "smart-planter",
     title: "Smart Planter",
     description: "A planter that monitors soil moisture, temperature, humidity, and light levels to make plant care easier for beginners.",
-    image: "/src/assets/projects/smart-planter.png",
+    image: "/src/assets/projects/smart-planter.jpg",
     technologies: ["Arduino", "Embedded Systems", "Sensors", "C++", "Autodesk Tinkercad", "Rapid Prototyping",]
   },
   {
