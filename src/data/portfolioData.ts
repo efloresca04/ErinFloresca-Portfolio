@@ -2,37 +2,42 @@ import type { Project, Experience, Education, SkillCategory, ContactLink } from 
 
 export const personalInfo = {
   name: "Erin Floresca",
-  title: "Computer Engineering Graduate",
-  subtitle: "Building innovative solutions through technology",
-  description: `I'm Erin Floresca, a passionate Computer Engineering graduate with expertise in both 
-    software and hardware development. I specialize in creating efficient, innovative 
-    solutions that bridge the gap between digital systems and real-world applications. 
-    From embedded systems to web development, I'm driven by the challenge of solving 
-    complex technical problems.`,
-  image: "/src/assets/hero.jpg"
+  title: "Erin Floresca",
+  subtitle: "Computer Engineer",
+  description: [
+    "I enjoy building devices from the ground up that help people in their daily lives."
+  ],
+  image: "/src/assets/pictures/pfp.jpeg"
 };
 
 export const projects: Project[] = [
   {
-    id: "smart-home",
-    title: "Smart Home Automation System",
-    description: "IoT-based home automation with custom web dashboard and mobile control",
-    image: "/src/assets/projects/smart-home.jpg",
-    technologies: ["IoT", "React", "Arduino"]
+    id: "special-needs-device",
+    title: "Special Needs Communication & Feedback Device",
+    description: "A wearable IoT device designed to assist non-verbal children to communicate their needs and provide a soothing stimulus when they are distressed.",
+    image: "/src/assets/projects/special-needs-device.png",
+    technologies: ["BLE", "ESP32", "Android Studio", "IoT", "C++", "Customer Requirements"]
   },
   {
-    id: "fpga-calculator",
-    title: "FPGA-Based Calculator",
-    description: "Hardware calculator implementation using Verilog with optimized arithmetic operations",
-    image: "/src/assets/projects/fpga-calc.jpg",
-    technologies: ["FPGA", "Verilog", "Hardware Design"]
+    id: "automated-sewing-machine",
+    title: "Computer-Controlled Industrial Sewing Machine",
+    description: "An industrial sewing machine automated using Arduino to take an input of desired stitch count and output that number of stitches.",
+    image: "/src/assets/projects/automated-sewing-machine.png",
+    technologies: ["Arduino", "C++", "Reverse Engineering"]
   },
   {
-    id: "embedded-weather",
-    title: "Embedded Weather Station",
-    description: "Real-time weather monitoring system with sensor integration and data visualization",
-    image: "/src/assets/projects/portfolio.jpg",
-    technologies: ["Embedded C", "Sensors", "Data Analysis"]
+    id: "smart-planter",
+    title: "Smart Planter",
+    description: "A planter that monitors soil moisture, temperature, humidity, and light levels to make plant care easier for beginners.",
+    image: "/src/assets/projects/smart-planter.png",
+    technologies: ["Arduino", "Embedded Systems", "Sensors", "C++", "Autodesk Tinkercad", "Rapid Prototyping",]
+  },
+  {
+    id: "education-device",
+    title: "Interactive Elementary Education Device",
+    description: "A device that helps 4th graders learn facts about planets and musical notes in a fun, interactive way.",
+    image: "/src/assets/projects/education-device.png",
+    technologies: ["Rapid Prototyping", "Autodesk Tinkercad", "Laser Cutting", "Design Documentation"]
   }
 ];
 

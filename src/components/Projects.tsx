@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     <section id="projects" className="projects-section">
       <div className="container">
-        <h2>Featured Projects</h2>
+        <h2>Projects</h2>
         <div className="projects-grid">
           {projects.map((project) => (
             <ProjectCard 

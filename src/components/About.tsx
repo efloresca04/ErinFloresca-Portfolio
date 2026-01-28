@@ -15,7 +15,9 @@ const About = () => {
           <div className="about-text">
             <h1>{personalInfo.title}</h1>
             <h2>{personalInfo.subtitle}</h2>
-            <p>{personalInfo.description}</p>
+            {personalInfo.description.map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
             <button onClick={downloadResume} className="resume-btn">
               Download Resume
             </button>
