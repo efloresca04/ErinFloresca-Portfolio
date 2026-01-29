@@ -15,8 +15,14 @@ const Education = () => {
               <div className="education-school">{edu.school}</div>
               <div className="education-details">
                 {edu.gpa && <p><strong>GPA:</strong> {edu.gpa}</p>}
+                {edu.concentration && (
+                  <p><strong>Concentration:</strong> {edu.concentration}</p>
+                )}
                 {edu.coursework && (
                   <p><strong>Relevant Coursework:</strong> {edu.coursework}</p>
+                )}
+                {edu.activities && (
+                  <p><strong>Activities & Societies:</strong> {edu.activities}</p>
                 )}
                 {edu.honors && <p><strong>Honors:</strong> {edu.honors}</p>}
               </div>

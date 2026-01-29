@@ -19,6 +19,9 @@ const Contact = () => {
             ))}
           </div>
         </div>
+        <div className="footer-text">
+          © 2026 Erin Floresca. Vibe coded with React.
+        </div>
       </div>
     </section>
   );

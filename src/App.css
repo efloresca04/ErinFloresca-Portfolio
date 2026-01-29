@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Lato', Arial, sans-serif;
   background: var(--light-bg);
   color: var(--primary-color);
   line-height: 1.6;
@@ -297,7 +297,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  max-width: 800px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -381,13 +381,13 @@ body {
 }
 
 .education-content {
-  max-width: 800px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
 .education-item {
   background: var(--white);
-  padding: 3rem;
+  padding: 2rem;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
@@ -479,10 +479,10 @@ body {
 
 /* Contact Section */
 .contact-section {
-  padding: 6rem 0;
-  background: var(--primary-color);
+  padding: 6rem 0 1.5rem 0;
+  background: var(--accent-color);
   color: var(--white);
-  text-align: center;
+  text-align: left;
 }
 
 .contact-section h2 {
@@ -501,7 +501,7 @@ body {
 .contact-links {
   display: flex;
   gap: 1rem;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
@@ -515,28 +515,25 @@ body {
   transition: all 0.3s;
 }
 
-.contact-btn:not(.secondary) {
-  background: var(--accent-color);
-  color: var(--white);
-}
-
-.contact-btn.secondary {
-  background: transparent;
-  color: var(--white);
-  border: 2px solid var(--white);
+.contact-btn {
+  background: var(--light-bg);
+  color: var(--accent-color);
 }
 
 .contact-btn:hover {
+  background: var(--secondary-color);
+  color: var(--white);
   transform: var(--hover-transform);
 }
 
-.contact-btn:not(.secondary):hover {
-  background: var(--hover-accent-color);
-}
-
-.contact-btn.secondary:hover {
-  background: var(--white);
-  color: var(--primary-color);
+.footer-text {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 300;
 }
 
 /* Responsive Design */

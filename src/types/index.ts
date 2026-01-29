@@ -20,7 +20,9 @@ export interface Education {
   school: string;
   date: string;
   gpa?: string;
+  concentration?: string;
   coursework?: string;
+  activities?: string;
   honors?: string;
 }
 
