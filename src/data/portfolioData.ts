@@ -7,7 +7,7 @@ export const personalInfo = {
   description: [
     "Hi, I'm Erin Floresca and I'm a Computer Engineering graduate from Georgia Tech. I enjoy building devices that help people in their daily lives."
   ],
-  image: "/src/assets/pictures/pfp.jpg"
+  image: "/ErinFloresca-Portfolio/assets/pictures/pfp.JPG"
 };
 
 export const projects: Project[] = [
@@ -15,28 +15,28 @@ export const projects: Project[] = [
     id: "special-needs-device",
     title: "Special Needs Communication & Feedback Device",
     description: "A wearable IoT device designed to assist non-verbal children to communicate their needs and provide a soothing stimulus when they are distressed.",
-    image: "/src/assets/projects/special-needs-device.png",
+    image: "/ErinFloresca-Portfolio/assets/projects/special-needs-device.png",
     technologies: ["BLE", "ESP32", "Android Studio", "IoT", "C++", "Customer Requirements"]
   },
   {
     id: "automated-sewing-machine",
     title: "Computer-Controlled Industrial Sewing Machine",
     description: "An industrial sewing machine automated using Arduino to take an input of desired stitch count and output that number of stitches.",
-    image: "/src/assets/projects/automated-sewing-machine.png",
+    image: "/ErinFloresca-Portfolio/assets/projects/automated-sewing-machine.png",
     technologies: ["Arduino", "C++", "Reverse Engineering"]
   },
   {
     id: "smart-planter",
     title: "Smart Planter",
     description: "A planter that monitors soil moisture, temperature, humidity, and light levels to make plant care easier for beginners.",
-    image: "/src/assets/projects/smart-planter.jpg",
+    image: "/ErinFloresca-Portfolio/assets/projects/smart-planter.png",
     technologies: ["Arduino", "Embedded Systems", "Sensors", "C++", "Autodesk Tinkercad", "Rapid Prototyping",]
   },
   {
     id: "education-device",
     title: "Interactive Elementary Education Device",
     description: "A device that helps 4th graders learn facts about planets and musical notes in a fun, interactive way.",
-    image: "/src/assets/projects/education-device.png",
+    image: "/ErinFloresca-Portfolio/assets/projects/education-device.png",
     technologies: ["Rapid Prototyping", "Autodesk Tinkercad", "Laser Cutting", "Design Documentation"]
   }
 ];
@@ -94,7 +94,7 @@ export const education: Education[] = [
     date: "2025",
     concentration: "Devices, Distributed Systems and Software Design",
     coursework: "Prototyping Intelligent Devices, Embedded Systems Design, Computer Communication, Intro to Robotics & Perception, Physical Foundations of Computer Engineering, Digital System Design, Circuit Analysis, Data Structures & Algorithms, Objects & Design, Intro to Object Oriented Programming",
-    activities: "Women in Electrical and Computer Engineering (WECE), GT Filipino Student Association (GT FSA)",
+    activities: "Women in Electrical and Computer Engineering (WECE), GT Filipino Student Association (GT FSA)"
   }
 ];
 
