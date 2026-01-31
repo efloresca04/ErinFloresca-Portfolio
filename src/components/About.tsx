@@ -3,7 +3,7 @@ import { personalInfo } from '../data/portfolioData';
 const About = () => {
   const downloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/ErinFloresca-Portfolio/ErinFloresca_Resume.pdf';
+    link.href = '/ErinFloresca_Resume.pdf';
     link.download = 'Erin_Floresca_Resume.pdf';
     link.click();
   };
