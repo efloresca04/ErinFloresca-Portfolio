@@ -1,24 +1,17 @@
 
 import './App.css';
-import Navigation from './components/Navigation';
-import About from './components/About';
-import Projects from './components/Projects';
-import Experience from './components/Experience';
-import Education from './components/Education';
-// import Skills from './components/Skills';
-import Contact from './components/Contact';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Portfolio from './components/Portfolio';
+import ProjectDetail from './components/ProjectDetail';
 
 function App() {
   return (
-    <div className="portfolio">
-      <Navigation />
-      <About />
-      <Projects />
-      <Experience />
-      <Education />
-      {/* <Skills /> */}
-      <Contact />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Portfolio />} />
+        <Route path="/project/:projectId" element={<ProjectDetail />} />
+      </Routes>
+    </Router>
   );
 }
 

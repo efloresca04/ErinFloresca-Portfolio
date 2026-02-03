@@ -1,0 +1,56 @@
+/* Contact Section Styles */
+
+.contact-section {
+  padding: 6rem 0 1.5rem 0;
+  background: var(--accent-color);
+  color: var(--white);
+  text-align: left;
+}
+
+.contact-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.contact-content p {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.contact-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.contact-btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1.125rem;
+  transition: all 0.3s;
+  background: var(--light-bg);
+  color: var(--accent-color);
+}
+
+.contact-btn:hover {
+  background: var(--secondary-color);
+  color: var(--white);
+  transform: var(--hover-transform);
+}
+
+.footer-text {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 300;
+}

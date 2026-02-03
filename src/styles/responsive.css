@@ -1,0 +1,173 @@
+/* Responsive Design Styles */
+
+/* Large desktop styles */
+@media (min-width: 1920px) {
+  .container {
+    max-width: 85%;
+    padding: 0 3rem;
+    margin: 0 auto;
+  }
+  
+  .about-content {
+    gap: 6rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1919px) {
+  .container {
+    max-width: 90%;
+    padding: 0 2.5rem;
+    margin: 0 auto;
+  }
+  
+  .about-content {
+    gap: 5rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+    padding: 0 1.5rem;
+  }
+  
+  .about-text h1 {
+    font-size: 3rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .about-text {
+    order: 2;
+    text-align: center;
+  }
+  
+  .about-image {
+    order: 1;
+    margin-top: 0;
+  }
+  
+  .about-text h1 {
+    font-size: 2.5rem;
+  }
+  
+  .about-text h2 {
+    font-size: 1.25rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .experience-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .education-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .contact-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .contact-btn {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .about-section {
+    margin-top: 80px;
+  }
+}
+
+/* Project Detail Responsive */
+@media (max-width: 768px) {
+  .project-detail-container {
+    padding: 5rem 0 2rem;
+  }
+
+  .project-detail-container .container {
+    padding: 0 1rem;
+  }
+
+  .link-buttons {
+    flex-direction: column;
+  }
+
+  .project-link-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .tech-tags {
+    justify-content: center;
+  }
+
+  .image-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Small mobile styles */
+@media (max-width: 480px) {
+  .about-text h1 {
+    font-size: 2rem;
+  }
+  
+  .about-text h2 {
+    font-size: 1.125rem;
+  }
+  
+  .container {
+    padding: 0 0.75rem;
+  }
+  
+  .project-info h3 {
+    font-size: 1.125rem;
+  }
+  
+  .about-image img {
+    height: 350px;
+  }
+  
+  .resume-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

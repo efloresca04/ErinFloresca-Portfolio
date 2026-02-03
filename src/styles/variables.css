@@ -1,0 +1,41 @@
+/* CSS Variables and Global Styles */
+
+:root {
+  --primary-color: #232323;
+  --secondary-color: #666;
+  --accent-color: #659157;
+  --hover-accent-color: #47663d;
+  --light-bg: #f0ead6;
+  --white: #f9f7f0;
+  --border-light: #ececec;
+  --text-light: #5a5a5a;
+  --hover-transform: translateY(-2px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lato', Arial, sans-serif;
+  background: var(--light-bg);
+  color: var(--primary-color);
+  line-height: 1.6;
+}
+
+.portfolio {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}

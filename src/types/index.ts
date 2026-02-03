@@ -4,6 +4,13 @@ export interface Project {
   description: string;
   image: string;
   technologies: string[];
+  longDescription?: string;
+  features?: string[];
+  challenges?: string[];
+  impact?: string;
+  githubUrl?: string;
+  demoUrl?: string;
+  additionalImages?: string[];
 }
 
 export interface Experience {

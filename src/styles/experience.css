@@ -1,0 +1,87 @@
+/* Experience Section Styles */
+
+.experience-section {
+  padding: 6rem 0;
+  background: var(--white);
+}
+
+.experience-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  text-align: left;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.experience-item {
+  border-left: 3px solid var(--accent-color);
+  padding-left: 2rem;
+  position: relative;
+}
+
+.experience-item::before {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 0;
+  width: 13px;
+  height: 13px;
+  background: var(--accent-color);
+  border-radius: 50%;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.experience-header h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.experience-date {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--accent-color);
+  background: var(--light-bg);
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+}
+
+.experience-company {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.experience-duties {
+  list-style: none;
+  margin-left: 1rem;
+}
+
+.experience-duties li {
+  position: relative;
+  margin-bottom: 0.5rem;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.experience-duties li::before {
+  content: '▸';
+  position: absolute;
+  left: -1rem;
+  color: var(--accent-color);
+}

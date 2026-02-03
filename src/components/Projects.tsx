@@ -1,13 +1,14 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import ProjectCard from './ProjectCard';
 import { projects } from '../data/portfolioData';
 
 const Projects = () => {
   const [showAll, setShowAll] = useState(false);
+  const navigate = useNavigate();
   
   const handleProjectClick = (projectId: string) => {
-    console.log(`Clicked project: ${projectId}`);
-    // You can implement navigation to detailed project pages here
+    navigate(`/project/${projectId}`);
   };
 
   const visibleProjects = showAll ? projects : projects.slice(0, 3);
